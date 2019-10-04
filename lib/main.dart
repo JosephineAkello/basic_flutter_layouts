@@ -27,7 +27,7 @@ class LayoutAppState extends State<LayoutApp>{
                   ),
                 ),
               ),
-              Text('Kisumu, Kenya',
+              Text("Kisumu's, Kenya",
               style: TextStyle(color:
               Colors.grey)),
             ],
@@ -48,9 +48,10 @@ class LayoutAppState extends State<LayoutApp>{
         appBar: AppBar(
           title: Text('Flutter layout Example'),
         ),
-        body: Center(
-          child: Text('HelloWorld'),
-        ),
+        body: Column(
+          children: [
+            titleSection,
+          ]),
       ),
     );
   }
