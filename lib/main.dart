@@ -72,7 +72,11 @@ Widget textSection = Container(
         appBar: AppBar(
           title: Text('Flutter layout Example'),
         ),
-        body: Column(children: [
+        body: ListView(children: [
+          Image.asset('images/kisumufinest.jpg',
+          width: 600,
+          height: 280,
+          fit: BoxFit.cover,),
           titleSection,
           buttonSection,
           textSection
